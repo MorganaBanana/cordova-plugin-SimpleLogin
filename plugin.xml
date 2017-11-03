@@ -28,7 +28,7 @@
       </feature>
     </config-file>
 
-    <source-file src="src/android/yapps/plugins/simplelogin/simplelogin.java" target-dir="src/yapps/plugins/simplelogin/"/>
+    <source-file src="src/android/yapps/plugins/simplelogin/SimpleLogin.java" target-dir="src/yapps/plugins/SimpleLogin/"/>
   </platform>
 
   <platform name="ios">
