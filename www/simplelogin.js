@@ -1,3 +1,27 @@
+window.onload = function() {
+    user.init();
+    document.getElementById("back").onclick = function() {
+	user.init();  
+    }
+    document.getElementById("login-button").onclick = function() {
+	user.signIn(1);  
+    }document.getElementById("register-button").onclick = function() {
+	user.signUp(1);  
+    }
+    document.getElementById("login-button-do").onclick = function() {
+	user.signIn();  
+    }
+    document.getElementById("register-button-do").onclick = function() {
+	user.signUp();  
+    }
+    document.getElementById("reset-button").onclick = function() {
+	user.resetPassword();  
+    }
+    document.getElementById("reset-button-do").onclick = function() {
+	user.confirmReset();  
+    }
+}
+
 var user = {
 	init: function(){
 		$('.login-form').hide();
