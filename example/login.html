@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/simplelogin.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">var API_URL = 'http://ec2-18-220-56-40.us-east-2.compute.amazonaws.com/yapp/API/';var home_page="feed.html";</script>
+		<script src="../../themes/static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/simplelogin.js"></script>
+		<style type='text/css'>:root {--bodyBGcolor: #ffffff;--bodyTXcolor: #f25c05;}</style>
+	</head>
+	<body>
+		<div id="login-logo">
+			<img src="../../images/app/logo52.png">
+		</div>
+		
+		<div id="back" class="hidden" onclick="user.init()">X</div>
+		
+		<div id="WaitIcon" class="hidden">
+			<img src="images/load.gif">
+		</div>
+		
+		<div class="login-form" id="init">
+			<div class="login-msg hidden"></div>
+			<input type="button" id="login-button" value="Login" onclick="user.signIn(1)" />
+			<input type="button" id="register-button" value="Register" onclick="user.signUp(1)" />
+		</div>
+		
+		<div class="login-form hidden" id="login">
+			<div class="login-msg hidden"></div>
+			<input type="text" id="email" placeholder="Email" value='' />
+			<input type="password" id="password" placeholder="Password" value='' />
+			<input type="button" id="login-button" value="Login" onclick="user.signIn()" />
+		</div>
+		
+		<div class="login-form hidden" id="registration">
+			<div class="login-msg hidden"></div>
+			<input type="text" id="name" placeholder="Full Name" />
+			<input type="text" id="mail" placeholder="Email" />
+			<input type="text" id="securityQ" placeholder="Security Question" />
+			<input type="text" id="securityA" placeholder="Security Answer" />
+			<input type="password" id="pass" placeholder="Preferred Password" />
+			<input type="button" id="register-button" value="Register" onclick="user.signUp()" />
+		</div>
+		
+		<div class="login-form hidden" id="reset">
+			<div class="login-msg hidden"></div>
+			<input type="text" id="registeredEmail" placeholder="Email Address" />
+			<input type="button" id="reset-button" value="Reset" onclick="user.resetPassword()" />
+		</div>
+		<div class="login-form hidden" id="confirmReset">
+			<div class="login-msg hidden"></div>
+			<input type="text" id="secretAns" placeholder="Your answer" />
+			<input type="password" id="preferredPassword" placeholder="Preferred Password" />
+			<input type="button" id="resetButton" value="Reset" onclick="user.confirmReset()" />
+		</div>
+	</body>
+</html>

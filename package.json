@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-simplelogin",
+  "version": "1.0.0",
+  "description": "Plugin for Cordova (or PhoneGap) 3.0+ to authenticate user",
+  "cordova": {
+    "id": "cordova-plugin-simplelogin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuhail/cordova-plugin-simplelogin.git"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "simplelogin",
+    "login",
+    "signin",
+    "auth"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Shuhail Alam",
+  "bugs": {
+    "url": "https://github.com/mesmotronic/cordova-plugin-simplelogin/issues"
+  },
+  "homepage": "https://github.com/mesmotronic/cordova-plugin-simplelogin#readme"
+}

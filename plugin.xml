@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+  xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-plugin-simplelogin"
+  version="1.0.0"
+  >
+
+  <name>cordova-plugin-simplelogin</name>
+  <description>Plugin for Cordova (or PhoneGap) 3.0+ for user authentication</description>
+  <keywords>cordova,android,login,auth,user</keywords>
+  <repo>https://github.com/shuhailshuvo/cordova-plugin-simplelogin.git</repo>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+
+  <asset src="www/simplelogin.js" target="js/simplelogin.js"/>
+
+  <js-module src="www/simplelogin.js" name="user">
+    <clobbers target="user" />
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="simplelogin">
+        <param name="android-package" value="yapps.plugins.simplelogin"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/yapps/plugins/simplelogin/simplelogin.java" target-dir="src/yapps/plugins/simplelogin/"/>
+  </platform>
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="simplelogin">
+        <param name="ios-package" value="HWPsimplelogin" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/HWPsimplelogin.h" target-dir="simpleloginPlugin"/>
+    <source-file src="src/ios/HWPsimplelogin.m" target-dir="simpleloginPlugin"/>
+  </platform>
+
+  <platform name="wp7">
+    <source-file src="src/wp7/simplelogin.cs"/>
+  </platform>
+
+</plugin>
