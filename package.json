@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuhail/cordova-plugin-simplelogin.git"
+    "url": "git+https://github.com/shuhail/cordova-plugin-SimpleLogin.git"
   },
   "keywords": [
     "cordova",
@@ -28,7 +28,7 @@
   ],
   "author": "Shuhail Alam",
   "bugs": {
-    "url": "https://github.com/mesmotronic/cordova-plugin-simplelogin/issues"
+    "url": "https://github.com/mesmotronic/cordova-plugin-SimpleLogin/issues"
   },
-  "homepage": "https://github.com/mesmotronic/cordova-plugin-simplelogin#readme"
+  "homepage": "https://github.com/mesmotronic/cordova-plugin-SimpleLogin#readme"
 }
