@@ -1,4 +1,5 @@
-window.onload = function() {
+var PLUGIN_NAME = 'user';
+document.addEventListener('deviceReady',function() {
     user.init();
     document.getElementById("back").onclick = function() {
 	user.init();  
@@ -20,7 +21,7 @@ window.onload = function() {
     document.getElementById("reset-button-do").onclick = function() {
 	user.confirmReset();  
     }
-}
+},false);
 
 var user = {
 	init: function(){
