@@ -2,9 +2,34 @@
 <html>
 	<head>
 		<link href="css/simplelogin.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript">var API_URL = 'http://example.com/API/';var home_page="home.html";</script>
+		<script type="text/javascript">var API_URL = 'http://example.com/API/';var home_page="home.html";var LOGO='images/app/logo.png';
+		document.addEventListener("deviceready",function() {
+			SimpleLogin.init();
+			document.getElementById("back").onclick = function() {
+				SimpleLogin.init();  
+			}
+			document.getElementById("login-button").onclick = function() {
+				SimpleLogin.signIn(1);  
+			}
+			document.getElementById("register-button").onclick = function() {
+				SimpleLogin.signUp(1);  
+			}
+			document.getElementById("login-button-do").onclick = function() {
+				SimpleLogin.signIn();  
+			}
+			document.getElementById("register-button-do").onclick = function() {
+				SimpleLogin.signUp();  
+			}
+			document.getElementById("reset-button").onclick = function() {
+				SimpleLogin.resetPassword();  
+			}
+			document.getElementById("reset-button-do").onclick = function() {
+				SimpleLogin.confirmReset();  
+			}
+		},false);
+		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/simplelogin.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
 		<style type='text/css'>:root {--bodyBGcolor: #ffffff;--bodyTXcolor: #f25c05;}</style>
 	</head>
 	<body>
