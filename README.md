@@ -15,11 +15,11 @@ Installation
 
 **Cordova**
 
-`cordova plugin add https://github.com/shuhailshuvo/cordova-plugin-simplelogin.git`
+`cordova plugin add https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git`
 
 **PhoneGap**
 
-`phonegap local plugin add https://github.com/shuhailshuvo/cordova-plugin-simplelogin.git`
+`phonegap local plugin add https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git`
 
 Code example
 ------------
@@ -28,13 +28,13 @@ Using the plugin in your app:
 
 ```js
 // Display signup form
-user.signUp(1);
+SimpleLogin.signUp(1);
 
 // Display signip form
-user.signUp(1);
+SimpleLogin.signUp(1);
 
 // Display Password reset form
-user.resetPassword(1);
+SimpleLogin.resetPassword(1);
 ``
 
 Check the example for more facts.
