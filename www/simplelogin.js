@@ -1,5 +1,5 @@
+var exec = require('cordova/exec');
 var PLUGIN_NAME = 'user';
-
 var user = {
 	init: function(){
 		$('.login-form').hide();
