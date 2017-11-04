@@ -10,13 +10,13 @@
   <keywords>cordova,android,login,auth,user</keywords>
   <repo>https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git</repo>
   <platform name="android">
-    <js-module src="www/simplelogin.js" name="user">
+    <js-module src="www/simplelogin.js" name="SimpleLogin">
         <runs/>
         <!-- This is the window variable name you want, like window.FeedReader -->
-        <clobbers target="user" />
+        <clobbers target="SimpleLogin" />
     </js-module>
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="user">
+      <feature name="SimpleLogin">
         <param name="android-package" value="yapps.plugins.simplelogin"/>
         <param name="onload" value="true" />
       </feature>
