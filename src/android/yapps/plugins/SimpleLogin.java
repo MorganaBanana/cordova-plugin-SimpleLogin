@@ -15,7 +15,7 @@ import android.util.Log;
 import java.util.Date;
 
 public class SimpleLogin extends CordovaPlugin {
-  private static final String TAG = "user";
+  private static final String TAG = "SimpleLogin";
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
