@@ -6,7 +6,8 @@ document.addEventListener('deviceReady',function() {
     }
     document.getElementById("login-button").onclick = function() {
 	user.signIn(1);  
-    }document.getElementById("register-button").onclick = function() {
+    }
+    document.getElementById("register-button").onclick = function() {
 	user.signUp(1);  
     }
     document.getElementById("login-button-do").onclick = function() {
