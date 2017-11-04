@@ -165,3 +165,9 @@ var SimpleLogin = {
 		 });
 	}
 };
+cordova.addConstructor(function() 
+{
+	window.SimpleLogin = SimpleLogin;
+	return window.SimpleLogin;
+});
+module.exports = SimpleLogin;
