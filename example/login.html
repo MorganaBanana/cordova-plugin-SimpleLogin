@@ -2,7 +2,12 @@
 <html>
 	<head>
 		<link href="css/simplelogin.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript">var API_URL = 'http://example.com/API/';var home_page="home.html";var LOGO='images/app/logo.png';
+		<script type="text/javascript">
+			var API_URL 	= 'http://example.com/API/';
+			var home_page	= 'home.html";
+			var LOGO		= 'images/app/logo.png';
+			var signUpRoute = 'signUp';
+			var signUpRoute = 'signInRoute';
 		document.addEventListener("deviceready",function() {
 			SimpleLogin.init();
 			document.getElementById("back").onclick = function() {
@@ -30,6 +35,7 @@
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
+		<script src="js/simplelogin.js"></script>
 		<style type='text/css'>:root {--bodyBGcolor: #ffffff;--bodyTXcolor: #f25c05;}</style>
 	</head>
 	<body>
